@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Encabezado */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Lista de tareas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #e9ecef;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:hover {
+    background-color: #dee2e6;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 600px) {
+    body {
+        height: auto; /* Evita problemas de altura fija en pantallas pequeñas */
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    li {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .delete-btn {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}
